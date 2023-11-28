@@ -1,0 +1,170 @@
+section class="review" id="review">
+
+    <h1 class="heading"> avaliaçao <span> dos clientes</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+               <p>A melhor cafeteria da região! não tem melhor!!! rsrsrs,o caféé o mais gostoso, Experimentem de tudo. Atendimento excelente e local decorado, melhor que essa impossivel</p>
+         
+            <img src="images/pic-1.png" class="user" alt="">
+            <h3>severino jorge</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p>Um cafezinho muito bem feito, serviço atencioso, outras opções de bebidas à base de café, tudo com aspecto delicioso. Recomendo!</p>
+            <img src="images/pic-2.png" class="user" alt="">
+            <h3>julia </h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+        
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p>Com área disponível para o bem atender,a cafeteria possui sistema de atendimento automatizado com sinalizador mesa/atendente. Pratos especiais com preços acessíveis. Suas atendentes prezam pelo bom atender com presteza. Sua proprietária está sempre no recinto demonstrando interesse pelo bom atendimento ao seu público</p>
+            <img src="images/pic-3.png" class="user" alt="">
+            <h3>pice privat </h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> outros <span>blogs</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/blog-1.jpeg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">cafe com chocolate</a>
+                <p>o cafe mais vendido da loja, venha conhecer.</p>
+                <a href="#" class="btn">leia mais</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/blog-2.jpeg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">cappuccino</a>
+                <p>bebida mais procurada pelos clientes</p>
+                <a href="#" class="btn">leia mais</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/blog-3.jpeg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">cafe italiano</a>
+            
+                <p>nova sabor da loja, chegou essa semana, nao perca tempo</p>
+                <a href="#" class="btn">leia mais</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="footer">
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+       
+    </div>
+
+</section>
+
+
+
+blogs .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.blogs .box-container .box{
+    border:var(--border);    
+}
+
+.blogs .box-container .box .image{
+    height: 25rem;
+    overflow:hidden;
+    width: 100%;
+}
+
+.blogs .box-container .box .image img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.blogs .box-container .box:hover .image img{
+    transform: scale(1.2);
+}
+
+.blogs .box-container .box .content{
+    padding:2rem;
+}
+
+.blogs .box-container .box .content .title{
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color:#fff;
+}
+
+.blogs .box-container .box .content .title:hover{
+    color:var(--main-color);
+}
+
+.blogs .box-container .box .content span{
+    color:var(--main-color);
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.blogs .box-container .box .content p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color:#ccc;
+    padding:1rem 0;
+}
